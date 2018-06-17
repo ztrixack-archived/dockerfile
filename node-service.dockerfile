@@ -9,8 +9,6 @@ LABEL maintainer "ztrixack.th@gmail.com" \
 
 # Set environment variables.
 ENV NPM_CONFIG_LOGLEVEL=warn \
-    NODE_ENV=production \
-    PORT=5000 \
     WORKSPACE="/home/src/app"
 
 # Run updates and install deps.

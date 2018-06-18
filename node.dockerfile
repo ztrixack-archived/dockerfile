@@ -3,7 +3,7 @@ FROM alpine:3.7
 ENV NODE_VERSION=v8.11.2 \
     NPM_VERSION=6.1.0
 
-RUN apk add --no-cache curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ && \
+RUN apk add --no-cache --virtual curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ && \
   for server in ipv4.pool.sks-keyservers.net keyserver.pgp.com ha.pool.sks-keyservers.net; do \
     gpg --keyserver $server --recv-keys \
       94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \

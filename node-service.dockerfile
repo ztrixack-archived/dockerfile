@@ -3,9 +3,9 @@
 FROM ztrixack/node:1.0.0
 
 # Create tag label for contact me.
-LABEL maintainer "ztrixack.th@gmail.com" \
-      description "Microservice Build Container" \
-      version "1.0.0"
+LABEL maintainer="ztrixack.th@gmail.com" \
+      description="Microservice Build Container" \
+      version="1.0.0"
 
 # Set environment variables.
 ENV NPM_CONFIG_LOGLEVEL=warn \
